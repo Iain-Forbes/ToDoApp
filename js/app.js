@@ -32,10 +32,16 @@ const createToDoListItem = function (form) {
   priority.textContent = form.priority.value;
   todoListItem.appendChild(priority);
 
-  const compelted = document.createElement("input")
-  compelted.setAttribute("type", 'radio');
-  label.text('Complete?'); 
+  const compelted = document.createElement("input");
+  compelted.type = 'radio';
+  compelted.ID = 'complete';
+  const label = document.createElement('label');
+  label.htmlFor = 'complete';
+  const description = document.createTextNode('Check if Completed:')
+  label.appendChild(description);
+  todoListItem.appendChild(label)
   todoListItem.appendChild(compelted)
+  
 
   return todoListItem;
 }
