@@ -1,3 +1,23 @@
 body {
   font-family: Palatino;
 }
+
+.red {
+  color: #CC0000;
+}
+
+.blue {
+  color: #0000CC;
+}
+
+.green {
+  color: #00CC00;
+}
+
+.hi{ background-color:red; }
+
+#todolist {
+  display: flex;
+  flex-flow: row wrap;
+  
+}
