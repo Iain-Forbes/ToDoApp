@@ -19,5 +19,4 @@ body {
 #todolist {
   display: flex;
   flex-flow: row wrap;
-  
 }
