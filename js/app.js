@@ -44,13 +44,11 @@ const handleNewItemFormSubmit = function (event) {
     } else if (form.priority.value == "Medium Priorty") {
     todoListItem.appendChild(priority);
     todoListItem.style.color = "blue";
+  } else if (form.priority.value == "Low Priorty") {
+    todoListItem.appendChild(priority);
+    todoListItem.style.color = "green";
 
-  // For some reason this else statement does not work.
-  // } else (form.priority.value == "Low Priorty") {
-  //   todoListItem.appendChild(priority);
-  //   todoListItem.style.color = "green";
-
-  //   };
+    };
 
   todoListItem.appendChild(priority);
   console.log(priority)
